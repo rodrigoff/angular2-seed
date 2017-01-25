@@ -5,11 +5,6 @@ import {
 
 @Component({
   selector: 'menu',
-  styles: [`
-    :host {
-      height:36px;
-    }
-  `],
   templateUrl: './menu.component.html'
 })
 export class MenuComponent implements OnInit {
