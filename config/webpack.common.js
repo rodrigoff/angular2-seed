@@ -162,17 +162,13 @@ module.exports = function (options) {
          */
         {
           test: /\.scss$/,
-          use: ['raw-loader', 'css-loader', 'sass-loader'],
+          use: ['to-string-loader', 'css-loader', 'sass-loader'],
           exclude: [helpers.root('src', 'styles')]
         },
 
-        // {
-        //   test: /\.scss$/,
-        //   loaders: ['sass-loader']
-        // },
         {
           test: /\.(woff2?|ttf|eot|svg)$/,
-          loader: 'url?limit=10000'
+          loader: 'url-loader?limit=10000'
         },
 
         /* Raw loader support for *.html

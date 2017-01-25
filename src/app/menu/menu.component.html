@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]=" ['./'] ">Index</a></li>
+        <li routerLinkActive="active"><a [routerLink]=" ['./home'] ">Home</a></li>
+        <li routerLinkActive="active"><a [routerLink]=" ['./detail'] ">Detail</a></li>
+        <li routerLinkActive="active"><a [routerLink]=" ['./barrel'] ">Barrel</a></li>
+        <li routerLinkActive="active"><a [routerLink]=" ['./about'] ">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="btn-group" dropdown>
+          <a href id="user-dropdown" dropdownToggle>Username <span class="caret"></span></a>
+          <ul dropdownMenu role="menu" aria-labelledby="user-dropdown">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
